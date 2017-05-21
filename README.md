@@ -1,4 +1,4 @@
-#Kana
+# Kana
 
 Android app for reference to the basic Japanese characters.
 
