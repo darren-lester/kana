@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_kana_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.darrenlester.kana.KanaInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/kana"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="48sp"/>
+
+        <TextView
+            android:id="@+id/transliteration"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true">
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin">
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hiragana"
+                            android:textAppearance="?android:textAppearanceSmall"
+                            android:layout_marginRight="8dp"/>
+
+                        <TextView
+                            android:id="@+id/hiragana"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textAppearance="?android:textAppearanceSmall"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/katakana"
+                            android:textAppearance="?android:textAppearanceSmall"
+                            android:layout_marginRight="8dp"/>
+
+                        <TextView
+                            android:id="@+id/katakana"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textAppearance="?android:textAppearanceSmall"/>
+                    </TableRow>
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/example_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/example_header"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <TableLayout
+                    android:id="@+id/examples"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:shrinkColumns="2">
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+                    android:layout_alignParentRight="true">
+
+                    <ImageButton
+                        android:id="@+id/play_sound"
+                        style="@style/KanaSoundButton"
+                        android:contentDescription="@string/kana_sound_content_description" />
+
+                <fragment
+                    android:name="com.darrenlester.kana.StrokeOrderFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stroke_order_fragment_land"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

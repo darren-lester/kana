@@ -1,0 +1,102 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="KanaTable">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:stretchColumns">*</item>
+        <item name="android:layout_marginBottom">@dimen/kana_table_margin_bottom</item>
+    </style>
+
+    <style name="KanaRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Kana">
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">showKanaInfo</item>
+    </style>
+
+    <style name="Kana.Blank">
+        <item name="android:visibility">invisible</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="Romaji">
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="RomajiRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="RomajiRow.Disabled">
+        <!--<item name="android:visibility">gone</item>-->
+    </style>
+
+    <style name="KanaSoundButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/ic_volume_up_white_48dp</item>
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:contentDescription">@string/kana_sound_content_description</item>
+    </style>
+
+    <style name="KanaStrokeDiagramContainer">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="KanaStrokeDiagram">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:contentDescription">@string/kana_stroke_diagram_content_description</item>
+    </style>
+
+    <style name="WebLink">
+        <item name="android:autoLink">web</item>
+        <item name="android:textColorLink">@color/colorPrimary</item>
+    </style>
+
+    <style name="ChangelogEntry">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <style name="AboutSectionButton">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:drawablePadding">@dimen/activity_horizontal_margin</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+</resources>

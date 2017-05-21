@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.darrenlester.kana.AboutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/activity_horizontal_margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAppearance="?android:textAppearanceLarge"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/build_number"
+                android:layout_marginRight="@dimen/activity_horizontal_margin_small"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/version_number"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/developer_site"
+            style="@style/WebLink" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/AboutSectionButton"
+                android:text="@string/leave_review"
+                android:clickable="true"
+                android:onClick="openInPlayStore"
+                android:drawableLeft="@drawable/ic_star_black_24dp"
+                android:drawableStart="@drawable/ic_star_black_24dp"
+                android:drawableTint="@color/colorPrimary" />
+
+            <TextView
+                style="@style/AboutSectionButton"
+                android:onClick="showAcknowledgements"
+                android:text="@string/acknowledgements_title"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_people_black_24dp"
+                android:drawableStart="@drawable/ic_people_black_24dp"
+                android:drawableTint="@color/colorPrimary" />
+
+            <TextView
+                style="@style/AboutSectionButton"
+                android:onClick="showChangelog"
+                android:text="@string/changelog_title"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_info_black_24dp"
+                android:drawableStart="@drawable/ic_info_black_24dp"
+                android:drawableTint="@color/colorPrimary" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/KanaStrokeDiagramContainer"
+    tools:context="com.darrenlester.kana.StrokeOrderFragment"
+    android:id="@+id/stroke">
+    <ImageView
+        android:id="@+id/stroke_1"
+        style="@style/KanaStrokeDiagram"
+        android:contentDescription="@string/kana_stroke_diagram_content_description" />
+    <ImageView
+        android:id="@+id/stroke_2"
+        style="@style/KanaStrokeDiagram"
+        android:layout_below="@id/stroke_1"
+        android:contentDescription="@string/kana_stroke_diagram_content_description" />
+</RelativeLayout>

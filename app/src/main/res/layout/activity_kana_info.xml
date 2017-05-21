@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_kana_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.darrenlester.kana.KanaInfoActivity"
+    >
+
+    <fragment
+        android:id="@+id/kana_info_fragment"
+        android:name="com.darrenlester.kana.KanaInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</ScrollView>

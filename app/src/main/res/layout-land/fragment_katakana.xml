@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/katakana_tab">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".KatakanaFragment"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/kana_table_margin"
+        tools:ignore="HardcodedText">
+
+        <TableLayout
+            style="@style/KanaTable">
+            <TableRow
+                style="@style/KanaRow">
+                <Button android:text="ン" style="@style/Kana" />
+                <Button android:text="ワ" style="@style/Kana" />
+                <Button android:text="ラ" style="@style/Kana" />
+                <Button android:text="ヤ" style="@style/Kana" />
+                <Button android:text="マ" style="@style/Kana" />
+                <Button android:text="ハ" style="@style/Kana" />
+                <Button android:text="ナ" style="@style/Kana" />
+                <Button android:text="タ" style="@style/Kana" />
+                <Button android:text="サ" style="@style/Kana" />
+                <Button android:text="カ" style="@style/Kana" />
+                <Button android:text="ア" style="@style/Kana" />
+            </TableRow>
+            <TableRow
+                style="@style/RomajiRow.Disabled"
+                android:id="@+id/katakana_romaji_row_a">
+                <TextView android:text="n" style="@style/Romaji" />
+                <TextView android:text="wa" style="@style/Romaji" />
+                <TextView android:text="ra" style="@style/Romaji" />
+                <TextView android:text="ya" style="@style/Romaji" />
+                <TextView android:text="ma" style="@style/Romaji" />
+                <TextView android:text="ha" style="@style/Romaji" />
+                <TextView android:text="na" style="@style/Romaji" />
+                <TextView android:text="ta" style="@style/Romaji" />
+                <TextView android:text="sa" style="@style/Romaji" />
+                <TextView android:text="ka" style="@style/Romaji" />
+                <TextView android:text="a" style="@style/Romaji" />
+            </TableRow>
+
+            <TableRow
+                style="@style/KanaRow">
+                <TextView android:text="" style="@style/Romaji" />
+                <TextView android:text="" style="@style/Romaji" />
+                <Button android:text="リ" style="@style/Kana" />
+                <TextView android:text="" style="@style/Romaji" />
+                <Button android:text="ミ" style="@style/Kana" />
+                <Button android:text="ヒ" style="@style/Kana" />
+                <Button android:text="ニ" style="@style/Kana" />
+                <Button android:text="チ" style="@style/Kana" />
+                <Button android:text="シ" style="@style/Kana" />
+                <Button android:text="キ" style="@style/Kana" />
+                <Button android:text="イ" style="@style/Kana" />
+            </TableRow>
+            <TableRow
+                style="@style/RomajiRow.Disabled"
+                android:id="@+id/katakana_romaji_row_ka">
+                <TextView android:text="" style="@style/Romaji" />
+                <TextView android:text="" style="@style/Romaji" />
+                <TextView android:text="ri" style="@style/Romaji" />
+                <TextView android:text="" style="@style/Romaji" />
+                <TextView android:text="mi" style="@style/Romaji" />
+                <TextView android:text="hi" style="@style/Romaji" />
+                <TextView android:text="ni" style="@style/Romaji" />
+                <TextView android:text="chi" style="@style/Romaji" />
+                <TextView android:text="shi" style="@style/Romaji" />
+                <TextView android:text="ki" style="@style/Romaji" />
+                <TextView android:text="i" style="@style/Romaji" />
+            </TableRow>
+
+
+
+            <TableRow
+                style="@style/KanaRow">
+                <TextView android:text="" style="@style/Romaji" />
+                <TextView android:text="" style="@style/Romaji" />
+                <Button android:text="ル" style="@style/Kana" />
+                <Button android:text="ユ" style="@style/Kana" />
+                <Button android:text="ム" style="@style/Kana" />
+                <Button android:text="フ" style="@style/Kana" />
+                <Button android:text="ヌ" style="@style/Kana" />
+                <Button android:text="ツ" style="@style/Kana" />
+                <Button android:text="ス" style="@style/Kana" />
+                <Button android:text="ク" style="@style/Kana" />
+                <Button android:text="ウ" style="@style/Kana" />
+            </TableRow>
+            <TableRow
+                style="@style/RomajiRow.Disabled"
+                android:id="@+id/katakana_romaji_row_sa">
+                <TextView android:text="" style="@style/Romaji" />
+                <TextView android:text="" style="@style/Romaji" />
+                <TextView android:text="ru" style="@style/Romaji" />
+                <TextView android:text="yu" style="@style/Romaji" />
+                <TextView android:text="mu" style="@style/Romaji" />
+                <TextView android:text="fu" style="@style/Romaji" />
+                <TextView android:text="nu" style="@style/Romaji" />
+                <TextView android:text="tsu" style="@style/Romaji" />
+                <TextView android:text="su" style="@style/Romaji" />
+                <TextView android:text="ku" style="@style/Romaji" />
+                <TextView android:text="u" style="@style/Romaji" />
+            </TableRow>
+
+
+            <TableRow
+                style="@style/KanaRow">
+                <TextView android:text="" style="@style/Romaji" />
+                <TextView android:text="" style="@style/Romaji" />
+                <Button android:text="レ" style="@style/Kana" />
+                <TextView android:text="" style="@style/Romaji"
+                    tools:ignore="TooManyViews" />
+                <Button android:text="メ" style="@style/Kana" />
+                <Button android:text="ヘ" style="@style/Kana" />
+                <Button android:text="ネ" style="@style/Kana" />
+                <Button android:text="テ" style="@style/Kana" />
+                <Button android:text="セ" style="@style/Kana" />
+                <Button android:text="ケ" style="@style/Kana" />
+                <Button android:text="エ" style="@style/Kana" />
+            </TableRow>
+            <TableRow
+                style="@style/RomajiRow.Disabled"
+                android:id="@+id/katakana_romaji_row_ta">
+                <TextView android:text="" style="@style/Romaji" />
+                <TextView android:text="" style="@style/Romaji" />
+                <TextView android:text="re" style="@style/Romaji" />
+                <TextView android:text="" style="@style/Romaji" />
+                <TextView android:text="me" style="@style/Romaji" />
+                <TextView android:text="he" style="@style/Romaji" />
+                <TextView android:text="ne" style="@style/Romaji" />
+                <TextView android:text="te" style="@style/Romaji" />
+                <TextView android:text="se" style="@style/Romaji" />
+                <TextView android:text="ke" style="@style/Romaji" />
+                <TextView android:text="e" style="@style/Romaji" />
+            </TableRow>
+
+
+            <TableRow
+                style="@style/KanaRow">
+                <TextView android:text="" style="@style/Romaji" />
+                <Button android:text="ヲ" style="@style/Kana" />
+                <Button android:text="ロ" style="@style/Kana" />
+                <Button android:text="ヨ" style="@style/Kana" />
+                <Button android:text="モ" style="@style/Kana" />
+                <Button android:text="ホ" style="@style/Kana" />
+                <Button android:text="ノ" style="@style/Kana" />
+                <Button android:text="ト" style="@style/Kana" />
+                <Button android:text="ソ" style="@style/Kana" />
+                <Button android:text="コ" style="@style/Kana" />
+                <Button android:text="オ" style="@style/Kana" />
+            </TableRow>
+            <TableRow
+                style="@style/RomajiRow.Disabled"
+                android:id="@+id/katakana_romaji_row_na">
+                <TextView android:text="" style="@style/Romaji" />
+                <TextView android:text="(w)o" style="@style/Romaji" />
+                <TextView android:text="ro" style="@style/Romaji" />
+                <TextView android:text="yo" style="@style/Romaji" />
+                <TextView android:text="mo" style="@style/Romaji" />
+                <TextView android:text="ho" style="@style/Romaji" />
+                <TextView android:text="no" style="@style/Romaji" />
+                <TextView android:text="to" style="@style/Romaji" />
+                <TextView android:text="so" style="@style/Romaji" />
+                <TextView android:text="ko" style="@style/Romaji" />
+                <TextView android:text="o" style="@style/Romaji" />
+            </TableRow>
+        </TableLayout>
+
+
+        <TableLayout
+            style="@style/KanaTable">
+
+            <TableRow
+                style="@style/KanaRow">
+                <Button android:text="パ" style="@style/Kana"/>
+                <Button android:text="バ" style="@style/Kana"/>
+                <Button android:text="ダ" style="@style/Kana"/>
+                <Button android:text="ザ" style="@style/Kana"/>
+                <Button android:text="ガ" style="@style/Kana"/>
+            </TableRow>
+            <TableRow
+                style="@style/RomajiRow.Disabled"
+                android:id="@+id/katakana_romaji_row_ha">
+                <TextView android:text="pa" style="@style/Romaji"/>
+                <TextView android:text="ba" style="@style/Romaji"/>
+                <TextView android:text="da" style="@style/Romaji"/>
+                <TextView android:text="za" style="@style/Romaji"/>
+                <TextView android:text="ga" style="@style/Romaji"/>
+            </TableRow>
+
+
+
+            <TableRow
+                style="@style/KanaRow">
+                <Button android:text="ピ" style="@style/Kana"/>
+                <Button android:text="ビ" style="@style/Kana"/>
+                <Button android:text="ヂ" style="@style/Kana"/>
+                <Button android:text="ジ" style="@style/Kana"/>
+                <Button android:text="ギ" style="@style/Kana"/>
+            </TableRow>
+            <TableRow
+                style="@style/RomajiRow.Disabled"
+                android:id="@+id/katakana_romaji_row_ma">
+                <TextView android:text="pi" style="@style/Romaji"/>
+                <TextView android:text="bi" style="@style/Romaji"/>
+                <TextView android:text="ji" style="@style/Romaji"/>
+                <TextView android:text="ji" style="@style/Romaji"/>
+                <TextView android:text="gi" style="@style/Romaji"/>
+            </TableRow>
+
+
+
+            <TableRow
+                style="@style/KanaRow">
+                <Button android:text="プ" style="@style/Kana"/>
+                <Button android:text="ブ" style="@style/Kana"/>
+                <Button android:text="ヅ" style="@style/Kana"/>
+                <Button android:text="ズ" style="@style/Kana"/>
+                <Button android:text="グ" style="@style/Kana"/>
+            </TableRow>
+            <TableRow
+                style="@style/RomajiRow.Disabled"
+                android:id="@+id/katakana_romaji_row_ya">
+                <TextView android:text="pu" style="@style/Romaji"/>
+                <TextView android:text="bu" style="@style/Romaji"/>
+                <TextView android:text="zu" style="@style/Romaji"/>
+                <TextView android:text="zu" style="@style/Romaji"/>
+                <TextView android:text="gu" style="@style/Romaji"/>
+            </TableRow>
+
+
+
+            <TableRow
+                style="@style/KanaRow">
+                <Button android:text="ペ" style="@style/Kana"/>
+                <Button android:text="ベ" style="@style/Kana"/>
+                <Button android:text="デ" style="@style/Kana"/>
+                <Button android:text="ゼ" style="@style/Kana"/>
+                <Button android:text="ゲ" style="@style/Kana"/>
+            </TableRow>
+            <TableRow
+                style="@style/RomajiRow.Disabled"
+                android:id="@+id/katakana_romaji_row_ra">
+                <TextView android:text="pe" style="@style/Romaji"/>
+                <TextView android:text="be" style="@style/Romaji"/>
+                <TextView android:text="de" style="@style/Romaji"/>
+                <TextView android:text="ze" style="@style/Romaji"/>
+                <TextView android:text="ge" style="@style/Romaji"/>
+            </TableRow>
+
+
+
+            <TableRow
+                style="@style/KanaRow">
+                <Button android:text="ポ" style="@style/Kana"/>
+                <Button android:text="ボ" style="@style/Kana"/>
+                <Button android:text="ド" style="@style/Kana"/>
+                <Button android:text="ゾ" style="@style/Kana"/>
+                <Button android:text="ゴ" style="@style/Kana"/>
+            </TableRow>
+            <TableRow
+                style="@style/RomajiRow.Disabled"
+                android:id="@+id/katakana_romaji_row_wa">
+                <TextView android:text="po" style="@style/Romaji"/>
+                <TextView android:text="bo" style="@style/Romaji"/>
+                <TextView android:text="do" style="@style/Romaji"/>
+                <TextView android:text="zo" style="@style/Romaji"/>
+                <TextView android:text="go" style="@style/Romaji"/>
+            </TableRow>
+
+
+        </TableLayout>
+
+        <TableLayout
+            style="@style/KanaTable">
+
+            <TableRow
+                style="@style/KanaRow">
+                <Button android:text="リャ" style="@style/Kana"/>
+                <Button android:text="ミャ" style="@style/Kana"/>
+                <Button android:text="ヒャ" style="@style/Kana"/>
+                <Button android:text="ニャ" style="@style/Kana"/>
+                <Button android:text="チャ" style="@style/Kana"/>
+                <Button android:text="シャ" style="@style/Kana"/>
+                <Button android:text="キャ" style="@style/Kana"/>
+            </TableRow>
+            <TableRow
+                style="@style/RomajiRow.Disabled"
+                android:id="@+id/katakana_romaji_row_n">
+                <TextView android:text="rya" style="@style/Romaji"/>
+                <TextView android:text="mya" style="@style/Romaji"/>
+                <TextView android:text="hya" style="@style/Romaji"/>
+                <TextView android:text="nya" style="@style/Romaji"/>
+                <TextView android:text="cha" style="@style/Romaji"/>
+                <TextView android:text="sha" style="@style/Romaji"/>
+                <TextView android:text="kya" style="@style/Romaji"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/KanaRow">
+                <Button android:text="リュ" style="@style/Kana"/>
+                <Button android:text="ミュ" style="@style/Kana"/>
+                <Button android:text="ヒュ" style="@style/Kana"/>
+                <Button android:text="ニュ" style="@style/Kana"/>
+                <Button android:text="チュ" style="@style/Kana"/>
+                <Button android:text="シュ" style="@style/Kana"/>
+                <Button android:text="キュ" style="@style/Kana"/>
+            </TableRow>
+            <TableRow
+                style="@style/RomajiRow.Disabled"
+                android:id="@+id/katakana_romaji_row_ga">
+                <TextView android:text="ryu" style="@style/Romaji"/>
+                <TextView android:text="myu" style="@style/Romaji"/>
+                <TextView android:text="hyu" style="@style/Romaji"/>
+                <TextView android:text="nyu" style="@style/Romaji"/>
+                <TextView android:text="chu" style="@style/Romaji"/>
+                <TextView android:text="shu" style="@style/Romaji"/>
+                <TextView android:text="kyu" style="@style/Romaji"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/KanaRow">
+                <Button android:text="リョ" style="@style/Kana"/>
+                <Button android:text="ミョ" style="@style/Kana"/>
+                <Button android:text="ヒョ" style="@style/Kana"/>
+                <Button android:text="ニョ" style="@style/Kana"/>
+                <Button android:text="チョ" style="@style/Kana"/>
+                <Button android:text="ショ" style="@style/Kana"/>
+                <Button android:text="キョ" style="@style/Kana"/>
+            </TableRow>
+            <TableRow
+                style="@style/RomajiRow.Disabled"
+                android:id="@+id/katakana_romaji_row_za">
+                <TextView android:text="ryo" style="@style/Romaji"/>
+                <TextView android:text="myo" style="@style/Romaji"/>
+                <TextView android:text="hyo" style="@style/Romaji"/>
+                <TextView android:text="nyo" style="@style/Romaji"/>
+                <TextView android:text="cho" style="@style/Romaji"/>
+                <TextView android:text="sho" style="@style/Romaji"/>
+                <TextView android:text="kyo" style="@style/Romaji"/>
+            </TableRow>
+
+        </TableLayout>
+
+
+        <TableLayout
+            style="@style/KanaTable">
+
+            <TableRow
+                style="@style/KanaRow">
+                <Button android:text="ピャ" style="@style/Kana"/>
+                <Button android:text="ビャ" style="@style/Kana"/>
+                <Button android:text="ジャ" style="@style/Kana"/>
+                <Button android:text="ギャ" style="@style/Kana"/>
+            </TableRow>
+            <TableRow
+                style="@style/RomajiRow.Disabled"
+                android:id="@+id/katakana_romaji_row_da">
+                <TextView android:text="pya" style="@style/Romaji"/>
+                <TextView android:text="bya" style="@style/Romaji"/>
+                <TextView android:text="ja" style="@style/Romaji"/>
+                <TextView android:text="gya" style="@style/Romaji"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/KanaRow">
+                <Button android:text="ピュ" style="@style/Kana"/>
+                <Button android:text="ビュ" style="@style/Kana"/>
+                <Button android:text="ジュ" style="@style/Kana"/>
+                <Button android:text="ギュ" style="@style/Kana"/>
+            </TableRow>
+            <TableRow
+                style="@style/RomajiRow.Disabled"
+                android:id="@+id/katakana_romaji_row_ba">
+                <TextView android:text="pyu" style="@style/Romaji"/>
+                <TextView android:text="byu" style="@style/Romaji"/>
+                <TextView android:text="ju" style="@style/Romaji"/>
+                <TextView android:text="gyu" style="@style/Romaji"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/KanaRow">
+                <Button android:text="ピョ" style="@style/Kana"/>
+                <Button android:text="ビョ" style="@style/Kana"/>
+                <Button android:text="ジョ" style="@style/Kana"/>
+                <Button android:text="ギョ" style="@style/Kana"/>
+            </TableRow>
+            <TableRow
+                style="@style/RomajiRow.Disabled"
+                android:id="@+id/katakana_romaji_row_pa">
+                <TextView android:text="pyo" style="@style/Romaji"/>
+                <TextView android:text="byo" style="@style/Romaji"/>
+                <TextView android:text="jo" style="@style/Romaji"/>
+                <TextView android:text="gyo" style="@style/Romaji"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>
