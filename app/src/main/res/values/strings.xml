@@ -5,7 +5,7 @@
     <string name="action_contact">Contact</string>
     <string name="action_about">About</string>
     <string name="build_number">Build Number:</string>
-    <string name="version_number">1.1.2</string>
+    <string name="version_number">1.1.3</string>
     <string name="developer_site">developed by Darren Lester (darrenlester.com)</string>
     <string name="example_header"><u>Examples</u></string>
     <string name="hiragana">Hiragana:</string>
@@ -41,7 +41,7 @@
     <string name="icons_licence">github.com/google/material-design-icons/blob/master/LICENSE</string>
 
     <!-- Contact -->
-    <string name="contact_email">dsslester@gmail.com</string>
+    <string name="contact_email">darren@darrenlester.com</string>
     <string name="contact_subject">kana app - feedback</string>
 
     <!-- Changelog -->
@@ -62,4 +62,7 @@
 
     <string name="changelog_title_1.1.2"><u>Version 1.1.2, 21/05/2017</u></string>
     <string name="changelog_description_1.1.2">Typo fix.</string>
+
+    <string name="changelog_title_1.1.3"><u>Version 1.1.3, 06/07/2017</u></string>
+    <string name="changelog_description_1.1.3">Updated contact email address.</string>
 </resources>
